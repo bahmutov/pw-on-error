@@ -1,4 +1,4 @@
-throw new Error('App crash')
+
 
 // Once the above error causes your test to fail
 // can you verify if the test runner catches errors
@@ -55,6 +55,7 @@ function appStart() {
         if (flag === false) {
           // an easy way for the application to signal
           // that it is done loading
+          console.log('loaded data')
           document.body.classList.add('loaded')
         }
       },
@@ -325,3 +326,5 @@ if (appStartDelay > 0) {
 } else {
   appStart()
 }
+
+throw new Error('App crash')

@@ -10,9 +10,9 @@ test('has title', async ({ page }) => {
   // the error callback before visiting the page
   page.on('pageerror', async (exception) => {
     console.log('page error!')
-    // throw exception
+    throw exception
     // alternative
-    expect(false, 'page error').toBeTruthy()
+    // expect(false, 'page error').toBeTruthy()
   })
 
   await page.goto('/')
