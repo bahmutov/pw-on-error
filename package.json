@@ -1,0 +1,21 @@
+{
+  "name": "pw-on-error",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --static . --watch data.json --middlewares ./node_modules/json-server-reset",
+    "open:pw": "playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "0.17.4",
+    "json-server-reset": "1.6.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.10"
+  }
+}
